@@ -1,0 +1,143 @@
+
+
+/* 홈페이지 상단  */
+
+#homepage_sang
+{
+
+    
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+#homepage_sang .mainmenu
+{
+    list-style-type: none;
+    display: flex;
+}
+
+
+ /* mainmenu 의 자식인 li에게만 효과를 부여 */
+#homepage_sang  > .mainmenu > li 
+{
+ 
+  padding: 10px;
+}
+
+
+
+
+
+/* 홈페이지 중단 - 1  */
+
+
+#homepage_view
+{
+   
+
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+
+    margin-bottom: 5px;
+}
+
+
+/* 대표 이미지 */
+#homepage_view > .hero_image
+{
+  width: 350px;
+  height: 350px;
+
+  border-radius: 80%;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px grey;
+  margin-bottom: 10px;
+}
+
+
+/*  모달창 */
+
+.modal_pade 
+{
+  background-color: gainsboro;
+  border-radius: 10px;
+
+  box-shadow: 1px 1px 4px 1px gray;
+}
+
+
+
+  
+
+
+
+/* 홈페이지 중단 - 2  */
+
+.service_container
+{
+    display: grid ;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#homepage_service > .service_item
+{
+    box-shadow: 1px 1px 1px 1px gray;
+    
+    /* 홈페이지 전체 가로의  절반 만큼을 가로로 부여  */
+    width:859px;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+/* homepage_service에서 이미지 부분의 오른쪽에 위치 */
+
+ .img_right
+{
+  margin-left : 40px;
+}
+
+
+.img_right > button {
+  margin-left : 600px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.img_right > button a {
+  text-decoration: none;
+  padding:3px 3px 3px 3px ;
+  color: black;
+}
+
+
+
+
+
+.item_hero
+{
+  width: 100px;
+  height: 80px;
+  padding :10px;
+}
+
+
+/* 홈페이지 하단 */
+
+#homepage_foot  > .foot_head
+{
+   display: flex;
+   align-items: center;
+
+   justify-content: space-between;
+}
+
+
