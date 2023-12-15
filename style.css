@@ -56,7 +56,7 @@
 
   border-radius: 80%;
   padding: 10px;
-  box-shadow: 1px 1px 1px 1px grey;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
   margin-bottom: 10px;
 }
 
@@ -81,9 +81,8 @@
 
 .service_container
 {
-    display: grid ;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
+ 
 }
 
 #homepage_service > .service_item
@@ -106,15 +105,17 @@
 }
 
 
-.img_right > button {
-  margin-left : 600px;
-  border: 2px solid black;
-  border-radius: 5px;
+.img_right > p > button 
+{
+  margin-left: 40px;
+  padding:5px;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
-.img_right > button a {
+.img_right > p > button > a 
+{
   text-decoration: none;
-  padding:3px 3px 3px 3px ;
   color: black;
 }
 
@@ -141,3 +142,91 @@
 }
 
 
+
+/* mobile - 가로 세로 */
+
+@media (max-width:576px) {
+  
+
+  /* 홈페이지 상단  */
+
+  #homepage_sang > .title
+  {
+    padding-right: 100px;
+  }
+
+  #homeapge_sang 
+  {
+    flex-direction: column;
+  }
+
+
+  #homepage_sang > .mainmenu > li
+  {
+      font-size: 10px;
+  }
+
+
+
+/* 홈페이지 중단 */
+
+  #homepage_service
+
+  {
+    flex-direction: column;
+
+  }
+
+  /* homepage item 설정 */
+  #homepage_service > .service_item
+  {
+    width: 400px;
+    margin-left:20px;
+    margin-top: 10px;
+  }
+
+  #homepage_service > .service_item > .item_hero 
+  {
+    width: 70px;
+    height: 70px;
+  }
+
+
+  #homepage_service > .service_item > .img_right  p
+  {
+    font-size: 11px;
+  }
+
+ 
+  .img_right > p > button {
+    margin-top:8px;
+    margin-left:180px;
+  }
+
+  
+
+  #homepage_view > .hero_image
+  {
+    width: 200px;
+    height:200px;
+  }
+
+ 
+  /* 홈페이지 하단 */
+
+  #homepage_foot > .foot_head
+  {
+    flex-direction: column;
+  }
+
+
+  #homepage_foot > .foot_head > h1
+ {
+   font-size: 21px;
+ }
+
+
+
+
+
+}

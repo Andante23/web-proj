@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" >
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
     <script defer src="https://kit.fontawesome.com/f57cfcf36f.js" crossorigin="anonymous"></script>
     <script defer src="app.js"></script>
     <title>Document</title>
@@ -19,11 +22,33 @@
            단테's 홈페이지
        </h1>
 
-       <ul class="mainmenu">
-            <li ><a href="#">게시판</a></li>
-             
+       <ul class="mainmenu"  id="homemenu">
+            <li><a href="#">게시판</a></li>
        </ul>
     </div>
+     <script>
+      /* 
+        max-width 가 576px 이면
+        메인메뉴에  서비스 부분이 붙여온다. 
+      */
+      
+     
+
+    
+         if(  window.matchMedia("(max-width: 700px)").matches  )
+         {
+              $('#homemenu').append("<li><a href='template/gallery'>갤러리</a></li>");
+              // 참고로 방문록은 게시판에 포함하고 있어서  다음과 같이  갤러리만 추가하기로 하였습니다. 
+          }
+
+      
+
+     
+
+       
+     
+
+     </script>
 
     <!-- 홈페이지 중단 -->
 
@@ -67,8 +92,6 @@
      <!-- 서비스 -->
 
      <div id="homepage_service" class="service_container" >
-
-
         <!-- 사진첩 -->
           <div class="service_item">
             
@@ -77,14 +100,15 @@
              <div class="img_right">
               <p>
                 제가 기록했던 사진들을 보실 수 있는 곳들입니다.
-             </p>
-
                 <button><a href="#">more</a></button>
+              </p>
+
+               
              </div>
                   
           </div>
 
-
+         
         <!-- 방문록 -->
           <div class="service_item">
             
@@ -93,45 +117,34 @@
             <div class="img_right">
               <p>
                 이 사이트를 방문하시고 감상평을 남겨주세요
-             </p>
+                <button><a href="#">more</a></button>
+              </p>
 
-             <button><a href="#">more</a></button>
-            </div>
-           
-             
             
-          
-        </div>
-
-       
-
+            </div>
+          </div>
      </div>
 
 
      <!-- 홈페이지 하단 -->
-     <footer id="homepage_foot">
-       
+     <footer id="homepage_foot"> 
        <div class="foot_head">
-        <h1>
+        <h1 >
             <!-- 홈페이지 로고 및 제목 -->
             단테's 홈페이지
          </h1>
-
-
          <address>
-            
             &copy;2023. 안단테.all rights reserved
           </address>
-     
-       </div>
-    
-       
-
-      
-
-
-
+        </div>
      </footer>
+
+    
+  
+
+
+
+
 
 </body>
 </html>
