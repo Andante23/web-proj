@@ -36,11 +36,10 @@ function modalbtnclick() {
 }
 
 // 모달 닫기 버튼 클릭했을 때
-<<<<<<< HEAD
+
 //  모달 내용 비활성화 
-=======
-//  모달 내용 비활성화 , 보가 버튼 활성화 
->>>>>>> fcf870c4a3802872b575913dc99d744046e6a8cb
+
+
 
 function modalbtnclose() {
 
@@ -55,9 +54,9 @@ function modalbtnclose() {
 }
 
 
-<<<<<<< HEAD
+
 // 햄버거 바에 가져다 대면  =>  메인메뉴가 나와요 ( 미완 )
 
-=======
->>>>>>> fcf870c4a3802872b575913dc99d744046e6a8cb
+
+
 
