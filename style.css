@@ -1,0 +1,231 @@
+#homepage_sang
+{
+
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;    
+    margin-bottom : 10px;
+}
+
+#homepage_sang .mainmenu
+{
+    list-style-type: none;
+    display: flex;
+}
+
+
+
+#homepage_sang  > .mainmenu > li 
+{
+
+  padding: 10px;
+}
+
+#homepage_sang > .mainmenu > li a 
+{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* 홈페이지 중단 - 1  */
+
+
+#homepage_view
+{
+
+
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* 대표 이미지 */
+#homepage_view > .hero_image
+{
+  width: 350px;
+  height: 350px;
+
+  border-radius: 80%;
+  padding: 10px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+  margin-bottom: 10px;
+}
+
+
+/*  대표 이미지 간단 소개 모달창 css  */
+
+.modal_pade 
+{
+  background-color: gainsboro;
+  border-radius: 10px;
+
+  box-shadow: 1px 1px 4px 1px gray;
+}
+
+
+
+
+/* 홈페이지 중단 - 2 */
+
+.service_container
+{
+    display: flex;
+
+}
+
+#homepage_service > .service_item
+{
+    box-shadow: 1px 1px 1px 1px gray;
+
+    /* 홈페이지 전체 가로의  절반 만큼을 가로로 부여  */
+    width:859px;
+
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+    margin-left:4px;
+}
+
+.item_hero
+{
+  width: 100px;
+  height: 80px;
+  padding :10px;
+}
+
+
+/* homepage_service에서 이미지 부분의 오른쪽에 위치 */
+
+ .img_right
+{
+  margin-left : 40px;
+}
+
+
+.img_right > p > button 
+{
+  margin-left: 40px;
+  padding:5px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.img_right > p > button > a 
+{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
+
+/* 홈페이지 하단 */
+
+#homepage_foot  > .foot_head
+{
+   display: flex;
+   align-items: center;
+
+   justify-content: space-between;
+}
+
+
+
+/* mobile - 가로 세로 */
+
+@media (max-width:576px) {
+
+
+  /* 홈페이지 상단  */
+
+
+  #homepage_sang > .title
+  {
+    padding-right: 100px;
+    font-size: 19px;
+  }
+
+
+
+
+  #homepage_sang > .mainmenu > li
+  {
+      font-size: 13px;
+  }
+
+
+/* 홈페이지 중단 - 1 */
+
+  #homepage_view > .hero_image
+  {
+    width: 200px;
+    height:200px;
+  }
+
+
+/* 홈페이지 중단 - 2 */
+
+  #homepage_service
+
+  {
+    flex-direction: column;
+
+  }
+
+
+  #homepage_service > .service_item
+  {
+    width: 400px;
+    margin-left:20px;
+    margin-top: 10px;
+  }
+
+  #homepage_service > .service_item > .item_hero 
+  {
+    width: 70px;
+    height: 70px;
+  }
+
+
+  #homepage_service > .service_item > .img_right  p
+  {
+    font-size: 11px;
+  }
+
+
+  .img_right > p > button {
+    margin-top:8px;
+    margin-left:180px;
+  }
+
+
+
+
+
+
+  /* 홈페이지 하단 */
+
+  #homepage_foot > .foot_head
+  {
+    flex-direction: column;
+  }
+
+
+  #homepage_foot > .foot_head > h1
+ {
+   font-size: 21px;
+ }
+}
+
