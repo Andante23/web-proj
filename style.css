@@ -13,6 +13,10 @@
     display: flex;
 }
 
+#homepage_sang i{
+  display: none;
+}
+
 
 
 #homepage_sang  > .mainmenu > li 
@@ -27,12 +31,6 @@
   color: black;
 }
 
-
-/* PC 화면일 때는  햄버거 바 아이콘 비활성화 */
-#homepage_sang > .mainmenu > li i
-{
-  display: none;
-}
 
 
 
@@ -65,7 +63,7 @@
 
   border-radius: 80%;
   padding: 10px;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+  box-shadow: 2px 2px 2px 2px gray;
   margin-bottom: 10px;
 }
 
@@ -190,43 +188,24 @@
 
 
 
-   /* 
-      #1 pc 화면에서 비활성화 되었던 햄버거 바 활성화 
-      #2 게시판 링크 햄버거 바에 숨기기       
-   */
-
-   .mainmenu li a 
-   {
-    display: none;
-   }
-
-   #homepage_sang > .mainmenu > li i
-   {
-     display: block;
-     font-size:23px;
-   }
-   
-  
-
-
-
-
 
   /* 홈페이지 상단  */
 
 
   #homepage_sang > .title
   {
-    padding-right: 100px;
+    padding-left: 120px;
     font-size: 19px;
+   
   }
 
 
 
-
+ /* 메인메뉴는 홈페이지 중단으로  옮겨간다. */
   #homepage_sang > .mainmenu > li
   {
       font-size: 13px;
+      display: none;
   }
 
 
@@ -246,7 +225,7 @@
 
   {
     flex-direction: column;
-
+   
   }
 
 
@@ -267,7 +246,10 @@
   #homepage_service > .service_item > .img_right  p
   {
     font-size: 11px;
+   
   }
+
+
 
 
   .img_right > p > button {
@@ -291,7 +273,18 @@
   #homepage_foot > .foot_head > h1
  {
    font-size: 21px;
- }
+   display: none;
+  }
+
+  #homepage_foot > .foot_head > address
+  {
+     padding-top:20px;
+  }
+
+
+
+
+
 }
 
 
