@@ -1,0 +1,46 @@
+ .gal_title
+{
+    text-align: center;
+    background-color: bisque;
+}
+
+
+#uploadbtn
+{
+    padding-left: 1400px;
+    background-color: cadetblue;
+    
+}
+
+
+#gal_middle
+{
+    margin-top:30px;
+    width:auto;
+    height: 400px;
+    background-color: aquamarine;
+   
+}
+
+
+
+#gal_middle >  .post_image
+{
+    background-color: antiquewhite;
+    margin: 40px;
+    padding:30px;
+    width: 400px;
+    height: 400px;
+}
+
+
+#gal_bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+
+}
+
+

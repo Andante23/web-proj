@@ -31,6 +31,12 @@
   color: black;
 }
 
+#homepage_sang > .mainmenu > li a:hover
+{
+  box-shadow: 1px 1px 1px 1px gray;
+  padding:7px ;
+  border-radius: 12px;
+}
 
 
 
