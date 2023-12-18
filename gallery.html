@@ -17,26 +17,28 @@
     </head>    
         
         <!-- 사진 업로드  버튼 -->
-        <input type="file" name="" id="uploadbtn">
-  
+        <input type="file" name=""   id="fileElem"
+        multiple
+        accept="image/*"
+        style="display: none;">
+        <a href="#" id="fileSelect">이미지를 선택해주세요</a> 
+
+
+        <div id="gal_middle">
+
+
+            <div id="fileList"></div>
+             
+          </div>
+
+
+       
 
    
+
     
      <!-- 업로드된 이미지가 붙여지는 곳 -->
-     <div id="gal_middle">
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-        <img   class="post_image" src="" alt="업로드이미지" >
-     </div>
+    
 
      
      <!-- 갤러리 페이지 하단 -->
