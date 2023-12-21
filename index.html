@@ -16,6 +16,10 @@
 
 </head>
 <body>
+
+  
+
+
     <!-- 홈페이지 상단 -->
     <div id="homepage_sang">
        <h1 class="title">
@@ -23,18 +27,26 @@
        </h1>
 
    
-       <ul class="mainmenu"  id="homemenu">
-            <li><a href="#" class="board_list" id="board_icon">게시판</a></li>  
+
+    
+
+
+       <ul class="mainmenu "  id="homemenu"  >
+          <li> <a href="board.html" class="board_list" id="board_icon">방문록</a></li> 
+           
+         
         </ul>
 
-  
+        <!--  service_item 중에 방문록과 겹쳐서  메뉴바  아이콘  제거  -->
+      
+   
+ 
+     
+    
+
     </div>
 
-
-
-
-
-
+  
 
 
     <!-- 홈페이지 중단 -->
@@ -86,18 +98,27 @@
              <img class="item_hero" alt="사진들" src="img/camera.png" >
 
              <div class="img_right">
-              <p>
-                제가 기록했던 사진들을 보실 수 있는 곳들입니다.
-                <button><a href="template/gallery.html">more</a></button>
+              <p>제가 기록했던 사진들을 보실 수 있는 곳들입니다.
+              
               </p>
-
+              <button><a href="gallery.html">more</a></button>
 
              </div>
 
+
+            
           </div>
 
 
-        <!-- 방문록 -->
+        <!-- 방문록 
+        
+          반응형이 되면  방문록으로  전환됩니다.  
+
+          반응형에서도 중복이 있다면   사용자 입장에서  불편하기에 
+          그렇게 하였습니다.
+        
+        
+        -->
           <div class="service_item">
 
             <img class="item_hero" alt="방문록" src="img/dotgle.png" >
@@ -105,9 +126,9 @@
             <div class="img_right">
               <p>
                 이 사이트를 방문하시고 감상평을 남겨주세요
-                <button><a href="#">more</a></button>
+                
               </p>
-
+              <button><a href="board.html">more</a></button>
 
             </div>
           </div>
@@ -130,6 +151,7 @@
 
 
 
+     
 
 
 

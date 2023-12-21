@@ -1,48 +1,47 @@
+
+
+
+
+
 #homepage_sang
 {
 
-    display: flex;
+    display: var(--hs-display);
     align-items: center;    
     justify-content: space-around;    
-    margin-bottom : 10px;
+    margin-bottom : var(--hs-area);
 }
 
 #homepage_sang .mainmenu
 {
-    list-style-type: none;
-    display: flex;
+    list-style-type: var(--hs-none);
+    display: var(--hs-display) ;
 }
-
-#homepage_sang i{
-  display: none;
-}
-
 
 
 #homepage_sang  > .mainmenu > li 
 {
 
-  padding: 10px;
+  padding:  var(--hs-area);
 }
 
 #homepage_sang > .mainmenu > li a 
 {
-  text-decoration: none;
+  text-decoration: var(--hs-none);
   color: black;
 }
 
 #homepage_sang > .mainmenu > li a:hover
 {
   box-shadow: 1px 1px 1px 1px gray;
-  padding:7px ;
-  border-radius: 12px;
+  padding: var(--hs-area) - 3;
+  border-radius:  var(--hs-area) + 2;
 }
 
 
 
 
-
-/* 홈페이지 중단 - 1  */
+/* 홈페이지 중단   */
 
 
 #homepage_view
@@ -56,7 +55,7 @@
 
     flex-direction: column;
 
-    margin-bottom: 5px;
+    margin-bottom: var(--hm-area) - 5px;
 
 }
 
@@ -68,20 +67,30 @@
   height: 350px;
 
   border-radius: 80%;
-  padding: 10px;
+  padding: var(--hm-area);
   box-shadow: 2px 2px 2px 2px gray;
-  margin-bottom: 10px;
+  margin-bottom: var(--hm-area);
+}
+
+#homeapge_view > .hero_info
+{
+  border:2px solid black;
+  background-color: transparent;
 }
 
 
-/* 모달 창 버튼 디자인 */
+/* 모달 
+  
+  99 ~ 124
+  
+*/
 
 #info_btn
 {
   border: 2px solid black;
   background-color: transparent;
   padding : 4px 4px 4px 4px;
-  border-radius: 10px;
+  border-radius: var(--hm-area);
 }
 
 
@@ -93,24 +102,12 @@
 
 }
 
-
-
-#homeapge_view > .hero_info
-{
-  border:2px solid black;
-  background-color: transparent;
-}
-
-
-
-
-
 /*  대표 이미지 간단 소개 모달창 css  */
 
 .modal_pade 
 {
   background-color: gainsboro;
-  border-radius: 10px;
+  border-radius: var(--hm-area);
 
   box-shadow: 1px 1px 4px 1px gray;
 }
@@ -118,7 +115,15 @@
 
 
 
-/* 홈페이지 중단 - 2 */
+
+
+
+
+
+
+
+
+
 
 .service_container
 {
@@ -136,7 +141,7 @@
     display: flex;
     align-items: center;
     margin-top:10px;
-    margin-left:4px;
+    margin-left:120px;
 }
 
 .item_hero
@@ -147,7 +152,6 @@
 }
 
 
-/* homepage_service에서 이미지 부분의 오른쪽에 위치 */
 
  .img_right
 {
@@ -188,10 +192,13 @@
 
 
 
-/* mobile - 가로 세로 */
+
+/* 최대 너비가 576 픽셀이거나  그거보다 낮을때 */
 
 @media (max-width:576px) {
 
+  
+  
 
 
 
@@ -200,19 +207,33 @@
 
   #homepage_sang > .title
   {
-    padding-left: 120px;
+    
+    padding-right: 20px;
     font-size: 19px;
    
   }
 
+ 
+
+
+
+
+
+
+
+
 
 
  /* 메인메뉴는 홈페이지 중단으로  옮겨간다. */
-  #homepage_sang > .mainmenu > li
+  #homepage_sang > .mainmenu 
   {
-      font-size: 13px;
       display: none;
+      
   }
+
+
+
+
 
 
 /* 홈페이지 중단 - 1 */
@@ -227,41 +248,59 @@
 
 /* 홈페이지 중단 - 2 */
 
-  #homepage_service
+#homepage_service {
+  flex-direction: column;
+}
 
-  {
-    flex-direction: column;
-   
-  }
 
 
   #homepage_service > .service_item
   {
     width: 400px;
-    margin-left:20px;
+    margin-left:60px;
     margin-top: 10px;
+
+    
   }
 
   #homepage_service > .service_item > .item_hero 
   {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
   }
 
-
+  
   #homepage_service > .service_item > .img_right  p
   {
-    font-size: 11px;
+   /* 모바일에 적합하도록 설계  */
+    font-size:12px;
+  }
+
+  
+  /* 버튼에 마우스 커서를 가져다 되었을 때 효과 */
+  #homepage_service > .service_item > .img_right button 
+  {
+    margin-left: 200px;
+    margin-bottom: 3px;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+
+  #homepage_service > .service_item > .img_right button:hover 
+  {
    
+    border: 3px solid black;
+    background-color: transparent;
+  }
+
+  #homepage_service > .service_item > .img_right button a 
+  {
+    text-decoration: none;
+    color:black;
   }
 
 
 
-
-  .img_right > p > button {
-    margin-top:8px;
-    margin-left:180px;
-  }
 
 
 
@@ -292,6 +331,7 @@
 
 
 }
+
 
 
 
