@@ -32,6 +32,8 @@
   box-shadow: 1px 1px 1px 1px gray;
   padding: 7px;
   border-radius:  12px;
+  background-color: black;
+  color: white;
 }
 
 
@@ -82,23 +84,25 @@
   
 */
 
-#info_btn
-{
-  margin: 20px;
-  border: 2px solid black;
-  background-color: transparent;
-  padding : 4px 4px 4px 4px;
-  border-radius: var(--hm-area);
-}
 
 
 /* 모달 창 버튼에 마우스를 가져다 됬을때 */
-
-#info_btn:hover
-{
-   border: 4px solid black;
-
+#info_btn {
+  color: white;
+  border-color: black;
+  background-color: black;
+  margin :10px;
+  border-radius: 10%;
+  box-shadow: 1px 1px 1px 1px gray;
 }
+
+#info_btn:hover{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+
 
 /*  대표 이미지 간단 소개 모달창 css  */
 
@@ -126,7 +130,7 @@
 .service_container
 {
     display: flex;
-
+    margin-left: 10px;
 }
 
 #homepage_service > .service_item
@@ -138,8 +142,7 @@
 
     display: flex;
     align-items: center;
-    margin-top:10px;
-    margin-left:120px;
+    margin:10px;
 }
 
 .item_hero
@@ -150,25 +153,32 @@
 }
 
 
+/* img_right */
 
  .img_right
 {
   margin-left : 40px;
+  font-size: 12px;
 }
 
 
-.img_right > p > button 
-{
-  margin-left: 40px;
-  padding:5px;
-  border-radius: 10px;
-  background-color: transparent;
+.img_right > button {
+  margin-left:300px;
+
+  border: none;
+  border-radius: 5px;
 }
 
-.img_right > p > button > a 
-{
-  text-decoration: none;
-  color: black;
+.img_right  > button a {
+   text-decoration: none;
+   color: black;
+   font-weight: bolder;
+   cursor: pointer;
+  }
+
+.img_right > button a:hover {
+  text-decoration: underline;
+   
 }
 
 
@@ -255,8 +265,8 @@
 
   #homepage_service > .service_item
   {
-    width: 400px;
-    margin-left:60px;
+    width: 300px;
+    margin-left:0px;
     margin-top: 10px;
 
     
@@ -272,14 +282,16 @@
   #homepage_service > .service_item > .img_right  p
   {
    /* 모바일에 적합하도록 설계  */
-    font-size:12px;
+    font-size:10px;
+    
+    padding-right: 50px;
   }
 
   
   /* 버튼에 마우스 커서를 가져다 되었을 때 효과 */
   #homepage_service > .service_item > .img_right button 
   {
-    margin-left: 200px;
+    margin-left: 100px;
     margin-bottom: 3px;
     border: 1px solid black;
     background-color: transparent;
