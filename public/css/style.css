@@ -1,3 +1,4 @@
+/* 중복되서 쓰이는 css 값은 가상선택자(:root)로 처리  */
 .root{
 
   /* 홈페이지 상단 부분 */
@@ -12,6 +13,8 @@
 
 }
 
+/* 홈페이지 상단을 의미하는 homepage_sang  */
+
 #homepage_sang
 {
 
@@ -22,11 +25,9 @@
 }
 
 #homepage_sang > .title {
-   padding-left : 500px;
-
+   padding-left : 100px;
    font-size: 30px;
 }
-
 
 
 
@@ -55,7 +56,64 @@
 }
 
 
-/* 홈페이지 중단   */
+/*  날씨 표시하기  */
+#homepage_sang > .weather   {
+  width: 400px;
+  height: 105px;
+  
+  border-radius: 10px;
+
+  margin-left: 800px;
+  margin-right: 100px;
+
+  box-shadow: 1px 1px 1px 1px  gray ;
+
+  display: flex;
+}
+
+
+/* 날씨 표시란에 보면 이 면이 무엇을 의미하는지 대변하는 제목 */
+#homepage_sang > .weather > .weather_title {
+  font-size: 9px;
+  padding-left : 10px;
+
+  
+ 
+
+  
+}
+
+
+/*  날씨 아이콘 ( openweater 측에서 제공한 이미지입니다. )   */
+#homepage_sang > .weather >  .weather_icon {
+   margin-left: 10px;
+   width: 100px;
+   height: 100px;
+}
+
+/* 
+    로그인 / 회원가입 창에 보이는 레이블과 비슷합니다. 
+*/
+.weather_class {
+     
+    font-weight: bolder;
+}
+
+
+
+/* 현재 날씨  위치 , 상태 값  */
+#weathn.weath_span ,
+#weathm.weath_span  {
+
+  
+   padding-left: 40px;
+}
+
+
+
+
+
+/* 홈페이지 중단을 의미하는  homepage_view , hompage_service   */
 
 
 #homepage_view
@@ -94,15 +152,8 @@
 }
 
 
-/* 모달 
-  
-  99 ~ 124
-  
-*/
-
-
-
-/* 모달 창 버튼에 마우스를 가져다 됬을때 */
+/* 모달 :  120 ~ 141    */
+/* 모달 창 버튼  이펙트 효과(hover) */
 #info_btn {
   color: white;
   border-color: black;
@@ -119,9 +170,7 @@
 }
 
 
-
-/*  대표 이미지 간단 소개 모달창 css  */
-
+/*  대표 이미지 간단 소개 모달창  */
 .modal_pade 
 {
   background-color: gainsboro;
@@ -129,6 +178,9 @@
   margin-top:20px;
   box-shadow: 1px 1px 4px 1px gray;
 }
+
+
+/*  서비스라 할 수 있는 메뉴  */
 
 .service_container
 {
@@ -157,15 +209,11 @@
   padding :10px;
 }
 
-
-/* img_right */
-
  .img_right
 {
   margin-left : 40px;
   font-size: 12px;
 }
-
 
 .img_right > button {
   margin-left:300px;
@@ -174,6 +222,7 @@
   border-radius: 5px;
 }
 
+/*  메뉴 리스트에 마우스 커서를 가져다 두었을때 */
 .img_right  > p a {
    text-decoration: none;
    color: black;
@@ -187,8 +236,7 @@
 }
 
 
-/* 홈페이지 하단 */
-
+/* 홈페이지 하단이라 할 수 있는 .foot_head */
 #homepage_foot  > .foot_head
 {
    display: flex;
@@ -198,51 +246,28 @@
 }
 
 
+/* (213-249) , (255 - 263) 줄부터는 미디어 쿼리입니다.  */
 
-
-/*
-
-https://www.thewordcracker.com/miscellaneous/pc-%ED%83%9C%EB%B8%94%EB%A6%BF-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9A%A9-css-%EB%AF%B8%EB%94%94%EC%96%B4-%EC%BF%BC%EB%A6%ACmedia-query/
-
-*/
-
-
-
-/* 모바일 미디어 쿼리 */
+/* 모바일 */
 @media (min-width: 320px) and (max-width: 480px) {
-
-
-  #homepage_sang > .title {
-      padding-left: 120px;
-      font-size: 15px;
-  }
-
-
-  /* 홈페이지 메뉴 그다음  */
-
-  #homepage_view > .hero_image {
-
-    width: 100px;
-    height: 100px;
-  }
-
-
-  /*  홈페이지 메인 서비스  */
-
-
-
 
 
  
 
-  
-  /*  홈페이지 하단 */
+}
 
-  #homepage_foot > .foot_head  {
-    flex-direction: column;
-    font-size: 8px;
+
+
+
+/* 테블릿 , 아이패드 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
+ 
+  #homepage_sang > .title {
+    padding-left: 280px;
   }
-
-
+  
 
 }
+
+

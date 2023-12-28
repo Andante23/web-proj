@@ -31,11 +31,28 @@
     
 
 
-       <ul class="mainmenu "  id="homemenu"  >
-          <li> <a href="#" class="board_list" id="board_icon">방문록</a></li> 
-           
+       <div class="weather">
+
+              <p  class="weather_title">사는곳 날씨?</p> 
+            
+              <img id="wicon" src="" alt="Weather icon" class="weather_icon">
+        
+
          
-        </ul>
+            <div class="weather_script">
+                 <!-- 현재 날씨를 보여주고 있는 위치 -->
+             <p><small class="weather_class">위치</small> <span class="weath_span" id="weathn"></span></p>
+             <!-- 날씨를 보여주고 있는 곳의 날씨 상태 -->
+             <p><small class="weather_class">상태</small><span class="weath_span" id="weathm"></span></p> 
+        
+
+            </div>
+              
+         
+     
+      </div>
+
+   </div>
 
         <!--  service_item 중에 방문록과 겹쳐서  메뉴바  아이콘  제거  -->
       
@@ -137,7 +154,14 @@
             <!-- 홈페이지 로고 및 제목 -->
             단테's 홈페이지
          </h1>
+
          <address>
+
+         
+
+
+
+
             &copy;2023. 안단테.all rights reserved
           </address>
         </div>

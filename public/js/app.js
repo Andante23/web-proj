@@ -55,3 +55,40 @@ function modalbtnclose() {
 
 
 
+let lat = 37.3838233827022;
+let lon = 126.85885639512794;
+let API_key = '3c45503ba79203c075a5078319c09cec';
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}`;
+
+
+fetch(apiUrl)
+.then(response => {
+
+if (!response.ok) {
+  throw new Error(`HTTP error! Status: ${response.status}`);
+}
+return response.json();
+
+})
+.then(data => {
+console.log('날씨 정보:', data);
+
+ // 자바스크립트 라이브러리인 jquery를 이용  위치 / 날씨 부분에 붙여넣기 
+ $('#weathn').append(data.name );    // 위치
+ $('#weathm').append(data.weather[0].main);
+
+ let iconcode = data.weather[0].icon ;
+ let iconUrl =       "http://openweathermap.org/img/w/" + iconcode + ".png";   
+
+ $('#wicon').attr('src' , iconUrl);
+ 
+
+
+
+
+
+})
+.catch(error => {
+console.error('오류:', error);
+});
+
